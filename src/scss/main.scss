@@ -1,0 +1,49 @@
+
+@import 'reset';
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	padding: 10%;
+}
+
+header{
+	h1{
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+.versus{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+	.michael-scott{
+		width: 30%;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	.leslie-knope{
+		width: 25%;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.score{
+	display: flex;
+	flex-direction:row;
+
+}
+

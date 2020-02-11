@@ -1,0 +1,2 @@
+"use strict";var michael=document.querySelector(".michael-scott"),michaelScore=0,leslie=document.querySelector(".leslie-knope"),leslieScore=0;michael.addEventListener("click",function(e){axios.post("http://circuslabs.net:3000/data/michael",{})});
+//# sourceMappingURL=main.js.map
