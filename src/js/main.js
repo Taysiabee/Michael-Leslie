@@ -4,6 +4,7 @@ let results = document.querySelector(".results")
 let bar = document.querySelector(".bar")
 let leslieScore = null;
 let michaelScore = null;
+let resetBtn = document.querySelector(".reset")
 
 
 michael.addEventListener('click', function(){
@@ -58,6 +59,25 @@ let showResults = function () {
 
 	}
 }
+
+resetBtn.addEventListener('click', function () {
+	axios.post('http://circuslabs.net:3000/data/michael', {
+		type: 'number',
+		action: '=',
+		value: 0
+	}).then(res => {
+		console.log(res)
+		postResults()
+	})
+	axios.post('http://circuslabs.net:3000/data/leslie', {
+		type: 'number',
+		action: '=',
+		value: 0
+	}).then(res => {
+		console.log(res)
+		postResults()
+	})
+})
 
 
 
